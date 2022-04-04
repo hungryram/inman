@@ -21,14 +21,14 @@
     <div class="uk-height-viewport">
         <div class="uk-position-center">
             <div class="uk-text-center uk-light uk-padding">
-                <img src="../uploads/white-logo.png" alt="" width="180">
+                <img src="../uploads/white-logo.png" alt="" width="150">
                 <div class="uk-flex uk-flex-center">
                     <div class="uk-width-2xlarge uk-margin-medium-top">
                         <h1>Welcome Inman Agents to Our Event Opening Reception</h1>
                         <p>Enter for a chance to win a prize worth $1,000!</p>
                     </div>
                 </div>
-                <div class="uk-margin-medium-top uk-flex uk-flex-center">
+                <div class="uk-margin-small-top uk-flex uk-flex-center">
                     <div class="uk-width-large">
                         <a href="#modal-center" class="uk-button uk-button-primary uk-width-1-1" uk-toggle>Register</a>
                     </div>
@@ -55,13 +55,13 @@
                 <input type="hidden" name="Subject" value="Website Contact Form">
                 <input name="Source" type="hidden" value="{{ .Permalink }}" />
             
-                <div class="uk-width-1-2@s">
+                <div class="uk-width-1-2">
                     <div class="uk-inline">
                         <span class="uk-form-icon" uk-icon="icon: user"></span>
                         <input class="uk-input" type="text" placeholder="First Name" name="First Name">
                     </div>
                 </div>
-                <div class="uk-width-1-2@s">
+                <div class="uk-width-1-2">
                     <div>
                         <input class="uk-input" type="text" placeholder="Last Name" name="Last Name">
                     </div>
@@ -83,8 +83,58 @@
                         <div class="uk-form-controls uk-position-relative">
                         <span><img src="../uploads/state.svg" alt="" width="30" style="position:absolute;top:5px"></span>
                             <select class="uk-select" id="form-stacked-select">
-                                <option>Option 01</option>
-                                <option>Option 02</option>
+                                <option value="">State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
                             </select>
                         </div>
                     </div>
@@ -92,10 +142,11 @@
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label><input class="uk-checkbox" type="checkbox" name="Interested in learning about Serhant"> Please select if you're interested in learning more about SERHANT in your market</label>
                 </div>
-                <div class="uk-flex uk-flex-center uk-text-center uk-width-1-1">
+                <div class="uk-flex uk-flex-center uk-text-center uk-width-1-1 uk-text-center">
                     <div>
-                        <button class="uk-modal-close-default uk-button uk-button-secondary" type="button">Cancel</button>
-                        <button class="uk-button uk-button-primary">Submit</button>
+                        <button class="uk-modal-close-default uk-button uk-button-secondary uk-visible@s" type="button">Cancel</button>
+                        <button class="uk-button uk-button-primary">Submit</button><br>
+                        <button class="uk-modal-close-default uk-button uk-button-text uk-hidden@s uk-light" type="button">Cancel</button>
                     </div>
                 </div>
                 <div class="uk-width-1-1 md-content">
