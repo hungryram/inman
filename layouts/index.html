@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="uk-height-viewport">
+        <div class="uk-position-center">
+            <div class="uk-text-center uk-light uk-padding">
+                <img src="../uploads/white-logo.png" alt="" width="180">
+                <div class="uk-flex uk-flex-center">
+                    <div class="uk-width-2xlarge uk-margin-medium-top">
+                        <h1>Welcome Inman Agents to Our Event Opening Reception</h1>
+                        <p>Enter for a chance to win a prize worth $1,000!</p>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-flex uk-flex-center">
+                    <div class="uk-width-large">
+                        <a href="#modal-center" class="uk-button uk-button-primary uk-width-1-1" uk-toggle>Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-position-bottom uk-text-center uk-padding">
+            <div class="uk-light">
+                <small>Copyright 2022 &middot; SERHANT.</small>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-center" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <div class="uk-margin-large uk-text-center uk-light">
+                <img src="../uploads/serhant-white-logo.png" alt="" width="180">
+                <p>Enter for a chance to win a prize worth $1,000!</p>
+            </div>
+            <form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
+                <input name="bot-field" type="hidden" />
+                <input type="hidden" name="Subject" value="Website Contact Form">
+                <input name="Source" type="hidden" value="{{ .Permalink }}" />
+            
+                <div class="uk-width-1-2@s">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                        <input class="uk-input" type="text" placeholder="First Name" name="First Name">
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s">
+                    <div>
+                        <input class="uk-input" type="text" placeholder="Last Name" name="Last Name">
+                    </div>
+                </div>
+                <div class="uk-width-1-1">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" uk-icon="icon: phone"></span>
+                        <input class="uk-input" type="text" placeholder="Phone" name="Phone">
+                    </div>
+                </div>
+                <div class="uk-width-1-1">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                        <input class="uk-input" type="text" placeholder="Email" name="Email">
+                    </div>
+                </div>
+                <div class="uk-width-1-1">
+                    <div class="uk-margin">
+                        <div class="uk-form-controls uk-position-relative">
+                        <span><img src="../uploads/state.svg" alt="" width="30" style="position:absolute;top:5px"></span>
+                            <select class="uk-select" id="form-stacked-select">
+                                <option>Option 01</option>
+                                <option>Option 02</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-checkbox" type="checkbox" name="Interested in learning about Serhant"> Please select if you're interested in learning more about SERHANT in your market</label>
+                </div>
+                <div class="uk-flex uk-flex-center uk-text-center uk-width-1-1">
+                    <div>
+                        <button class="uk-modal-close-default uk-button uk-button-secondary" type="button">Cancel</button>
+                        <button class="uk-button uk-button-primary">Submit</button>
+                    </div>
+                </div>
+                <div class="uk-width-1-1 md-content">
+                    <div>
+                        {{ .Site.Data.appearance.form.form_disclaimer | markdownify }}
+                    </div>
+                </div>
+            </form>
+    
+        </div>
+    </div>
+</body>
+
+</html>
