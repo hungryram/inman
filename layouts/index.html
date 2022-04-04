@@ -14,6 +14,8 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -138,13 +140,18 @@
                     </div>
                 </div>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-checkbox" type="checkbox" name="Interested in learning about Serhant"> Please select if you're interested in learning more about SERHANT in your market</label>
+                    <div>
+                        <input type="checkbox" id="check" name="Interested in learning more about Serhant" value="Yes" />
+                        <label for="check">
+                          <span><!-- This span is needed to create the "checkbox" element --></span>Please select if you're interested in learning more about SERHANT. in your market
+                        </label>
+                    </div>
                 </div>
                 <div class="uk-flex uk-flex-center uk-text-center uk-width-1-1 uk-text-center">
                     <div>
                         <button class="uk-modal-close-default uk-button uk-button-secondary uk-visible@s" type="button">Cancel</button>
                         <button class="uk-button uk-button-primary">Submit</button><br>
-                        <button class="uk-modal-close-default uk-button uk-button-text uk-hidden@s uk-light" type="button">Cancel</button>
+                        <button class="uk-modal-close-default uk-button uk-button-text uk-hidden@s uk-light uk-margin-small-top" type="button">Cancel</button>
                     </div>
                 </div>
                 <div class="uk-width-1-1 md-content">
@@ -156,6 +163,20 @@
     
         </div>
     </div>
+
+
+
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+
+
 </body>
 
 </html>
